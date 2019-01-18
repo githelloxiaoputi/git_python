@@ -36,6 +36,7 @@
 	for i in obj.items('.res.res1'):	查找id=aaa下class=res res1的模块项
 		alink=i.find('a').attr('href')	获取模块下的a链接
 9.	请求页面信息或者获取页面信息，一般用来执行接口	requests
+	http://docs.python-requests.org/zh_CN/latest/user/quickstart.html  参考文档
 	headers = {'user-agent': 'my-app/0.0.1'}	伪装头信息
 	response=requests.get(url,headers=headers,timeout=0.001,allow_redirects=False)	allow_redirects=False不允许页面跳转
 	response.status_code	状态码
@@ -60,6 +61,8 @@
 		一个参数的时候可以直接使用quote(字符串)		from urllib import quote
 	2.urldecode		
 		可以直接使用urllib.parse.unquote(字符串)		from urllib import unquote
+14. 使用selenium库，谷歌插件下载地址
+	http://chromedriver.storage.googleapis.com/index.html
 
 
 
